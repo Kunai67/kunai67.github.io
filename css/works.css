@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Glacial Indifference Bold";
+  src: url("../../res/fonts/glacial-indifference/GlacialIndifference-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Homemade Apple";
+  src: url("../../res/fonts/homemade-apple/HomemadeApple.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Glacial Indifference Bold";
+  text-transform: uppercase;
+}
+
+body {
+  background: url("../../res/img/canva-dotted-diamond-background-h42V4JLazXY.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Homemade Apple";
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.75rem;
+}
+
+.primary-text__heading {
+  font-size: 5rem;
+}
+
+nav .links {
+  position: absolute;
+  top: -1.5rem;
+  right: -10rem;
+  height: 100%;
+}
+
+nav .links li:last-child {
+  position: absolute;
+  bottom: -3rem;
+}
+
+.green-box {
+  border: 20px solid #3ecf00;
+  width: 70vh;
+  height: 70vh;
+  position: relative;
+}
+
+.primary-text {
+  position: absolute;
+  top: -1rem;
+  left: -12.5rem;
+}
+
+.green-box {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=works.css.map */
