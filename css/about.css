@@ -1,16 +1,22 @@
 #loader-bg {
   height: 100vh;
   width: 100vw;
-  background: white;
+  background: url("../../res/img/canva-dotted-diamond-background-h42V4JLazXY.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
 }
 
 .loader-box {
   height: 10vh;
   width: 10vh;
-  border: 3vh solid #3ecf00;
+  border: 2vh solid #3ecf00;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,14 +34,12 @@
 
 @-webkit-keyframes load {
   from {
-    height: 10vh;
-    width: 10vh;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
   to {
-    height: 20vh;
-    width: 20vh;
+    height: 70vh;
+    width: 70vh;
     -webkit-transform: translate(-50%, -50%) rotate(720deg);
             transform: translate(-50%, -50%) rotate(720deg);
   }
@@ -43,14 +47,12 @@
 
 @keyframes load {
   from {
-    height: 10vh;
-    width: 10vh;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
   to {
-    height: 20vh;
-    width: 20vh;
+    height: 70vh;
+    width: 70vh;
     -webkit-transform: translate(-50%, -50%) rotate(720deg);
             transform: translate(-50%, -50%) rotate(720deg);
   }
