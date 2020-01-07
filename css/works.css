@@ -81,14 +81,15 @@ nav .links li:last-child {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: opacity 250ms ease;
-  transition: opacity 250ms ease;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+  overflow: hidden;
 }
 
 .loader-box {
   height: 10vh;
   width: 10vh;
-  border: 2vh solid #3ecf00;
+  border: 20px solid #3ecf00;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,12 +97,8 @@ nav .links li:last-child {
           transform: translate(-50%, -50%);
   -webkit-animation-name: load;
           animation-name: load;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
 }
 
 @-webkit-keyframes load {
