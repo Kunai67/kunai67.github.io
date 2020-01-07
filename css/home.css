@@ -70,6 +70,64 @@ nav .links li:last-child {
   position: relative;
 }
 
+#loader-bg {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loader-box {
+  height: 10vh;
+  width: 10vh;
+  border: 3vh solid #3ecf00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: load;
+          animation-name: load;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes load {
+  from {
+    height: 10vh;
+    width: 10vh;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  to {
+    height: 20vh;
+    width: 20vh;
+    -webkit-transform: translate(-50%, -50%) rotate(720deg);
+            transform: translate(-50%, -50%) rotate(720deg);
+  }
+}
+
+@keyframes load {
+  from {
+    height: 10vh;
+    width: 10vh;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  to {
+    height: 20vh;
+    width: 20vh;
+    -webkit-transform: translate(-50%, -50%) rotate(720deg);
+            transform: translate(-50%, -50%) rotate(720deg);
+  }
+}
+
 .primary-text {
   position: absolute;
   bottom: -1rem;
