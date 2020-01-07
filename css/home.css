@@ -87,8 +87,6 @@ nav .links li:last-child {
 }
 
 .loader-box {
-  height: 10vh;
-  width: 10vh;
   border: 20px solid #3ecf00;
   position: absolute;
   top: 50%;
@@ -109,6 +107,8 @@ nav .links li:last-child {
   from {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    height: 0;
+    width: 0;
   }
   to {
     height: 70vh;
@@ -122,6 +122,8 @@ nav .links li:last-child {
   from {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    height: 0;
+    width: 0;
   }
   to {
     height: 70vh;
