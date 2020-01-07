@@ -1,6 +1,6 @@
 let loader = document.getElementById("loader-bg");
 
-window.addEventListener('load', setTimeout(function() {
+window.addEventListener('DOMContentLoaded', setTimeout(function() {
     loader.style.opacity = 0;
     loader.style.zIndex = -1000;
     setTimeout(function() {
