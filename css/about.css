@@ -68,6 +68,33 @@ nav .links li:last-child {
   bottom: -3rem;
 }
 
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 4vmin;
+  }
+  nav .links {
+    position: absolute;
+    right: unset;
+    bottom: unset;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: -4rem;
+    left: -1.25rem;
+    text-align: center;
+  }
+  .links li {
+    margin-right: 1rem;
+  }
+  nav .link {
+    font-size: 1.15rem;
+  }
+  nav .links li:last-child {
+    position: static;
+  }
+}
+
 .container {
   width: 70%;
   position: relative;

@@ -68,10 +68,39 @@ nav .links li:last-child {
   bottom: -3rem;
 }
 
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 4vmin;
+  }
+  nav .links {
+    position: absolute;
+    right: unset;
+    bottom: unset;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: -4rem;
+    left: -1.25rem;
+    text-align: center;
+  }
+  .links li {
+    margin-right: 1rem;
+  }
+  nav .link {
+    font-size: 1.15rem;
+  }
+  nav .links li:last-child {
+    position: static;
+  }
+}
+
 .green-box {
   border: 20px solid #3ecf00;
-  width: 70vh;
-  height: 70vh;
+  width: 70vmin;
+  height: 70vmin;
+  max-width: 30rem;
+  max-height: 30rem;
   position: relative;
 }
 
@@ -146,5 +175,25 @@ nav .links li:last-child {
 
 .primary-text__desc {
   font-size: 1.25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .primary-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .primary-text__heading {
+    font-size: 4rem;
+  }
+  .primary-text__desc {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .primary-text {
+    left: -20vw;
+  }
 }
 /*# sourceMappingURL=home.css.map */
