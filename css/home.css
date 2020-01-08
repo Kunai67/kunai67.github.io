@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: "Glacial Indifference";
+  src: url("../../res/fonts/glacial-indifference/GlacialIndifference-Regular.otf") format("opentype");
+}
+
+@font-face {
   font-family: "Homemade Apple";
   src: url("../../res/fonts/homemade-apple/HomemadeApple.ttf") format("truetype");
 }

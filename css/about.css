@@ -1,3 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Glacial Indifference Bold";
+  src: url("../../res/fonts/glacial-indifference/GlacialIndifference-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("../../res/fonts/glacial-indifference/GlacialIndifference-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Homemade Apple";
+  src: url("../../res/fonts/homemade-apple/HomemadeApple.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Glacial Indifference Bold";
+  text-transform: uppercase;
+}
+
+body {
+  background: url("../../res/img/canva-dotted-diamond-background-h42V4JLazXY.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Homemade Apple";
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.75rem;
+}
+
+.primary-text__heading {
+  font-size: 5rem;
+}
+
+nav .links {
+  position: absolute;
+  top: -1.5rem;
+  right: -10rem;
+  height: 100%;
+}
+
+nav .links li:last-child {
+  position: absolute;
+  bottom: -3rem;
+}
+
 #loader-bg {
   height: 100vh;
   width: 100vw;
@@ -59,5 +129,50 @@
     -webkit-transform: translate(-50%, -50%) rotate(720deg);
             transform: translate(-50%, -50%) rotate(720deg);
   }
+}
+
+.container {
+  width: 70%;
+}
+
+.primary-text__desc {
+  font-family: "Glacial Indifference";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tech-stack__heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tech__title {
+  text-align: center;
+}
+
+.green-box.--mini {
+  width: 15vh;
+  height: 15vh;
+  border: 5px solid #3ecf00;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.green-box.--mini img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=about.css.map */
