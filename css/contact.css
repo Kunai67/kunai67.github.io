@@ -30,7 +30,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Homemade Apple";
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

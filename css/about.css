@@ -30,7 +30,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Homemade Apple";
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +97,6 @@ nav .links li:last-child {
 
 .container {
   width: 70%;
-  position: relative;
 }
 
 nav .links li:last-child {
@@ -108,6 +107,23 @@ nav .links li:last-child {
   font-family: "Glacial Indifference";
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.tech-stack {
+  position: relative;
+}
+
+.tech-container__tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tech-stack__heading {
@@ -143,5 +159,57 @@ nav .links li:last-child {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+nav {
+  position: absolute;
+  right: unset;
+  bottom: -2rem;
+  top: unset;
+  left: unset;
+  width: 100%;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  right: unset;
+  top: unset;
+  left: unset;
+  width: 100%;
+}
+
+nav .links li:last-child {
+  position: static;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 95%;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .primary-text__heading {
+    font-size: 2.5rem;
+  }
+  .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tech-container__tech {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    margin-bottom: 2rem;
+  }
+  nav .links li:last-child {
+    position: static;
+  }
 }
 /*# sourceMappingURL=about.css.map */
